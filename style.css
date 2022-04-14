@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.topnav {
+    background-color: #001489;
+    color: white;
+    position: relative;
+    padding: 0px 3%;
+    height: 35px;
+    display: flex;
+    z-index: 10;
+    
+
+}
+
+.topnav ul li {
+    display: inline-block;
+    padding: 4px 10px;
+}
+
+.topnav ul li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+
+
+.topnav ul li .sublinks{
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    padding: 10px 14%;
+    z-index: -1;
+    display: none;
+    
+}
+
+.topnav ul li:hover .sublinks{
+    display: flex;
+}
+
+.topnav ul li .sublinks:hover{
+    display: flex;
+}
+
+.topnav ul li .sublinks a{
+    text-decoration: none;
+    color: #777;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.topnav ul li .sublinks .group{
+    padding: 0px 20px;
+    border-right: 1px solid #aaa;
+}
+
+.topnav ul li .sublinks .group:last-child{
+    border: none;
+}
+
+
+.topnav .partners{
+    margin-left: auto;
+
+}
+
+.topnav ul{
+    margin: 0px 50px;
+}
+
+.topnav #logo img{
+    height: 80px;
+    width: auto;
+    position: relative;
+    top: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 12%;
+    position: relative;
+    border-bottom: 1px solid #aaa;
+}
+
+nav ul{
+    align-self: stretch;
+    display: flex;
+}
+
+nav ul li{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+nav ul li > a{
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #777;
+    font-size: 14px;
+}
+
+nav li:hover .links{
+    display: block;
+}
+
+
+nav ul li .links, 
+ nav #cta .search-area{
+    position:absolute ;
+    top: 80px;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    padding: 0px 12%;
+    border-bottom: 1px solid #ddd;
+    display: none;
+
+}
+
+nav #cta .search-area{
+    padding: 30px;
+}
+
+nav #cta .search-area input{
+    width: 100px;
+    padding: 10px 2px;
+    outline: none;
+
+
+}
+
+nav ul li .links a{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #777;
+    padding: 3px 7px;
+}
